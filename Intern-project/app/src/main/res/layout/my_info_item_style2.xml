@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--显示账号信息的style-->
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/accountNameStyle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="15sp"
+    android:paddingTop="5sp"
+    android:paddingBottom="5sp"
+    android:height="30sp"
+    android:background="#FFFFFF"
+    android:textColor="#000000"
+    android:textSize="15sp"
+    />

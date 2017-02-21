@@ -1,0 +1,26 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".DeviceDataFrame" >
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/chart1"
+        android:layout_width="match_parent"
+        android:layout_height="260sp" />
+
+    <ListView
+        android:id="@+id/statisticslist"
+        android:layout_width="match_parent"
+        android:layout_height="280sp"
+        android:layout_marginRight="10sp"
+        android:layout_marginLeft="10sp"
+        android:layout_marginTop="10sp"
+        android:cacheColorHint="#00000000"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:listSelector="#00000000">
+    </ListView>
+</LinearLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- ListView的头部 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:background="#FFFFFF" >
+
+    <!-- 内容 -->
+
+    <RelativeLayout
+        android:id="@+id/foot_contentLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10sp"
+        android:gravity="center_horizontal">
+
+        <!-- 箭头图像、进度条 -->
+
+        <FrameLayout
+            android:id="@+id/progressBarLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="15sp"
+            android:layout_centerVertical="true"
+            >
+
+            <!-- 进度条 -->
+
+            <ProgressBar
+                android:id="@+id/lvFooterProgressBar"
+                style="?android:attr/progressBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone" />
+        </FrameLayout>
+
+        <!-- 提示、最近更新 -->
+
+        <LinearLayout
+            android:id="@+id/textHint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/progressBarLayout"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <!-- 提示 -->
+
+            <TextView
+                android:id="@+id/lvFooterTipsTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:text="点击加载更多"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

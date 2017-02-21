@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_selected="true" android:drawable="@drawable/quickly_get_page_link_selected_item_shape"/>
+    <item android:drawable="@drawable/quickly_get_page_link_not_selected_item_shape"/>
+
+</selector>

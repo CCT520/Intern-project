@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.xiangjun.qingxinyaoyiyao" >
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="ANDROID.PERMISSION.FLASHLIGHT"/>
+    <uses-permission android:name="ANDROID.PERMISSION.HARDWARE_TEST"/>
+    <uses-permission android:name="ANDROID.PERMISSION.GET_TASKS"/>
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name" >
+        <activity
+            android:name=".ui.Splash"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.LoginFrame"
+            android:label="@string/app_name"
+            android:theme="@style/ActionBarBackgroundTheme"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name=".ui.MainFrame"
+            android:label=""
+            android:theme="@style/ActionBarBackgroundTheme" >
+        </activity>
+        <activity
+            android:name=".ui.ChooseAccountFrame"
+            android:label="选择账户"
+            android:theme="@style/ActionBarBackgroundTheme" >
+        </activity>
+        <activity
+            android:name=".ui.EditDeviceFrame"
+            android:label="编辑设备"
+            android:theme="@style/ActionBarBackgroundTheme" >
+        </activity>
+        <activity
+            android:name=".ui.DeployBatchOfDeviceFrame"
+            android:label="@string/title_activity_deploy_batch_of_devices_frame"
+            android:theme="@style/ActionBarBackgroundTheme" >
+        </activity>
+        <activity
+            android:name=".ui.EditDeviceRemarksNameFrame"
+            android:theme="@style/ActionBarBackgroundTheme" >
+        </activity>
+        <activity
+            android:name=".ui.AddOrEditPageFrame"
+            android:theme="@style/ActionBarBackgroundTheme" >
+        </activity>
+        <activity
+            android:name=".ui.AddOrEditPageInfoFrame"
+            android:theme="@style/ActionBarBackgroundTheme" >
+        </activity>
+        <activity
+            android:name=".ui.AddOrEditPageLinkFrame"
+            android:theme="@style/ActionBarBackgroundTheme" >
+        </activity>
+        <activity
+            android:name=".ui.QuicklyGetPageLinkFrame"
+            android:theme="@style/ActionBarBackgroundTheme" >
+        </activity>
+        <activity
+            android:name=".ui.DeviceDataFrame"
+            android:theme="@style/ActionBarBackgroundTheme" >
+        </activity>
+        <activity
+            android:name=".ui.AddReplyPageFrame"
+            android:theme="@style/ActionBarBackgroundTheme" >
+        </activity>
+        <activity
+            android:name=".ui.QRCodeCapture"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+        </activity>
+
+        <service android:name="com.sensoro.beacon.kit.BeaconProcessService" />
+        <service android:name="com.sensoro.beacon.kit.BeaconService" />
+        <service android:name="com.sensoro.beacon.kit.IntentProcessorService" />
+    </application>
+
+</manifest>

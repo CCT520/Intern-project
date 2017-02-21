@@ -1,0 +1,13 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="15sp"
+    android:paddingLeft="15sp"
+    android:paddingRight="15sp">
+
+    <com.example.xiangjun.qingxinyaoyiyao.ui.RefreshableListView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/deployBatchOfDeviceSubListStyle"
+        android:drawSelectorOnTop="false" />
+</RelativeLayout>

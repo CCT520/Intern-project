@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="150sp" android:id="@+id/linkItemLinearLayout"
+    android:background="@drawable/quickly_get_page_link_not_selected_item_shape">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="20sp"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:id="@+id/linkItemTitle" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="20sp"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:id="@+id/linkItemUpdateTime" />
+
+    <ImageView
+        android:layout_width="150sp"
+        android:layout_height="100sp"
+        android:id="@+id/linkItemPicture"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="70sp"
+        android:maxLines="4"
+        android:ellipsize="end"
+        android:id="@+id/linkItemDigest" />
+
+</LinearLayout>

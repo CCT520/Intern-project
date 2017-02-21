@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="com.example.xiangjun.qingxinyaoyiyao.ui.MainFrame">
+
+    <TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/tabhost"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <TabWidget android:id="@android:id/tabs"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true">
+            </TabWidget>
+            <FrameLayout android:id="@android:id/tabcontent"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_above="@android:id/tabs">
+                <LinearLayout android:id="@+id/tab1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="#FFFFFF"
+                    android:orientation="vertical" >
+
+                    <com.example.xiangjun.qingxinyaoyiyao.ui.RefreshableListView
+                        android:id="@+id/myDeviceLv"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:clickable="true" />
+                    
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tab2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="#FFFFFF"
+                    android:orientation="vertical">
+
+                    <com.example.xiangjun.qingxinyaoyiyao.ui.RefreshableListView
+                        android:id="@+id/frameLibLv"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent" />
+
+                </LinearLayout>
+
+
+                <RelativeLayout android:id="@+id/tab3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical">
+                    <ListView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/myInfoList"
+                        android:cacheColorHint="#00000000"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:listSelector="#00000000"/>
+                </RelativeLayout>
+            </FrameLayout>
+        </RelativeLayout>
+    </TabHost>
+
+</RelativeLayout>

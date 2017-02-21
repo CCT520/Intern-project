@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--退出登陆按钮的style-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="30sp"
+    >
+<Button
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/exitBtnStyle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@layout/my_info_button_style"
+    android:textColor="#FF3030"
+    android:textAlignment="center"
+    android:height="30sp"
+    android:textSize="15sp"
+    />
+</RelativeLayout>
